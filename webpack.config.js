@@ -40,15 +40,15 @@ module.exports = {
         test: /\.(((s?[ac]|le)ss)|styl)$/i,
         use: [
           'style-loader',
-          'css-loader'
+          'css-loader',
 
           // From below 4 loaders, uncomment a single loader which you want to use
           // If you have to use CSS, then no need to uncomment any of them
 
-          //   "sass-loader",
-          //   "less-loader",
-          //   "postcss-loader",
-          //   "stylus-loader",
+          'sass-loader'
+          // 'less-loader'
+          // 'postcss-loader'
+          // 'stylus-loader'
         ]
       },
 
