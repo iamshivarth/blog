@@ -12,7 +12,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|mjs|jsx|ts|tsx)$/,
+        test: /\.(js|.json|mjs|jsx|ts|tsx)$/,
         exclude: /node_modules/,
         use: [
           {
@@ -54,7 +54,11 @@ module.exports = {
 
       {
         test: /\.svg$/,
-        loader: 'svg-inline-loader'
+        use: [
+          {
+            loader: 'svg-url-loader'
+          }
+        ]
       }
     ]
   },

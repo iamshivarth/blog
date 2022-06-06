@@ -24,7 +24,8 @@
         "prettier"
     ],
     "rules": {
-        "no-console": 1 // Means warning
+        "no-console": 1, // Means warning
+        "react/prop-types": "off"
     },
     "overrides": [
         {
